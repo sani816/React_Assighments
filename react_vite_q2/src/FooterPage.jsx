@@ -1,4 +1,4 @@
 function FooterPage(){
-    return <h1>This is footer</h1>
+    return <footer>This is footer</footer>
 }
 export default FooterPage;

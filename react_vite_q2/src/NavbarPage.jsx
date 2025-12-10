@@ -1,4 +1,4 @@
 function NavbarPage(){
-    return <h1>This is Navbar</h1>
+    return <navbar>This is Navbar</navbar>
 }
 export default NavbarPage;
