@@ -7,10 +7,10 @@ function Counter(){
     setCount(count+1)
    }
    useEffect(()=>{
-        if(count%3==0){
+        if(count!==0&&count%3==0){
             alert(`The current number ${count} is divisible by 3`)
         }
-    })
+    },[count])
 
 
 
