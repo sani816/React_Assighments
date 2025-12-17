@@ -1,11 +1,16 @@
- import Component6 from "./Component6"
-function Component5({e,f}){
- return(
+import { useContext } from "react";
+import AppContext from "./AppContext";
+import Component6 from "./Component6";
+
+function Component5() {
+  const { f } = useContext(AppContext);
+
+  return (
     <div>
-        <h2>component 5</h2>
-        <h4>This is prop f: {f}</h4>
-          <Component6 e={e} />
+      <h4>This is prop f: {f}</h4>
+      <Component6 />
     </div>
- )
+  );
 }
-export default Component5
+
+export default Component5;
